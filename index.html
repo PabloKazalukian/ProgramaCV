@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Curriculum Vitae</title>
+  </head>
+  <body id="bodyID" class="bg-gray-800">
+    <header
+      class="flex flex-col justify-center items-center mt-4 text-white px-12"
+    >
+      <div class="mb-4">
+        <p class="text-3xl font-bold">
+          Curriculum Vitae de <span class="text-sky-600">Pablo Kazalukian</span>
+        </p>
+        <p class="text-2xl text-sky-600 text-center">
+          Desarrollador Full Stack
+        </p>
+      </div>
+      <hr class="border-1 bg-sky-600 w-full" />
+    </header>
+    <main class="grid grid-cols-8 gap-4 px-12">
+      <aside
+        class="col-span-1 md:col-span-2 border border-sky-600 rounded-md p-2 mt-8 flex flex-col md:items-center items-start"
+      >
+        <div id="avatarID" class="mt-4">
+          <img
+            src="https://randomuser.me/api/portraits/men/6.jpg"
+            alt="Foto perfil ficticia"
+            class="rounded-full"
+          />
+        </div>
+        <div id="infoID" class="text-white">
+          <h4 class="text-sky-600 text-2xl">Pablo Kazalukian</h4>
+          <hr class="border-1 bg-sky-600" />
+          <div id="softSkills" class="mt-2">
+            <h4 class="text-lg">Habilidades Blandas:</h4>
+            <div class="mx-5">
+              <ul class="list-disc text-sm">
+                <li>Pensamiento Critico</li>
+                <li>Proactivo</li>
+                <li>Resolución de problemas</li>
+                <li>Trabajo en equipo</li>
+              </ul>
+            </div>
+          </div>
+          <div id="techSkills" class="mt-2">
+            <h4 class="text-lg">Habilidades Tech:</h4>
+            <div class="mx-5">
+              <ul class="list-disc text-sm">
+                <li>Javascript</li>
+                <li>TypeScript</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Tailwind</li>
+                <li>Java</li>
+                <li>Angular</li>
+                <li>VueJs</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>NodeJs</li>
+                <li>Sequelize</li>
+                <li>EspressJs</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>Git / GItHub</li>
+                <li>Scrum</li>
+                <li>Ingles Intermedio</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <section class="col-span-7 md:col-span-6 mt-8 text-white">
+        <article class="flex flex-col items-center gap-3">
+          <h2 class="text-2xl underline">Experiencia Laboral</h2>
+          <div class="text-center mt-2">
+            <h4 class="text-xl">Asistente de proyecto</h4>
+            <p class="text-sky-600">
+              Neutap Rectificaciones | 01/2015 - 03/2015
+            </p>
+            <p class="px-12 text-justify mt-2 max-w-lg">
+              Creación de un sistema de generación de presupuestos
+              dinámicamente, guardando la información nube. Utilizando HTML, CSS
+              y JavaScript, me desempeñé en la maquetación de la página.
+            </p>
+          </div>
+        </article>
+        <hr class="border-1 bg-sky-600 my-10" />
+        <article class="flex flex-col items-center gap-3">
+          <h2 class="text-2xl underline">Formación Académica</h2>
+          <div class="text-center mt-2">
+            <h4 class="text-xl">
+              Soy Henry Bootcamp, Full Stack Web Developer
+            </h4>
+            <p class="text-sky-600">10/2021 | 02/2022</p>
+            <p class="px-12 text-justify mt-2 max-w-xl">
+              700 horas de cursado teórico-práctico en tecnologías Front-End y
+              Back-End
+            </p>
+            <div class="flex justify-center mt-4 max-w-xl">
+              <ul class="list-disc text-sm px-16 text-sky-300">
+                <li>Realización de 2 proyectos académicos</li>
+                <li>Metodología SCRUM Agile</li>
+                <li>Manejo de una ApiRest</li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <h4 class="text-xl">Lic. en Ciencias de la Computación</h4>
+            <p class="text-sky-600">02/2014 | 11/2019</p>
+            <p class="mt-2 max-w-xl">Universidad Nacional del Comahue | UNcO</p>
+            <div class="px-12 text-justify mt-2 max-w-xl">
+              <ul class="list-disc text-sm px-16 text-sky-300">
+                <li>2 años de materias cursadas</li>
+                <li>Resolución de Problemas</li>
+                <li>Análisis de Algoritmos</li>
+                <li>Estructuras de Datos</li>
+                <li>Bases en Programación Orientada a Objetos</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+      <article
+        id="contact"
+        class="col-span-8 flex flex-col items-center w-full text-white"
+      >
+        <h2 class="text-3xl">Contacto</h2>
+        <form
+          id="contactForm"
+          class="grid grid-cols-2 grid-row-1 gap-12 pt-6 text-black"
+        >
+          <input
+            class=""
+            type="text"
+            id="inputName"
+            name="name"
+            placeholder="Nombre"
+          />
+          <input
+            class="col-span-1 row-span-1"
+            type="email"
+            id="inputEmail"
+            name="email"
+            required
+            placeholder="email@domain.com"
+          />
+          <textarea
+            class="col-span-2 row-span-1"
+            type="text"
+            id="inputMessage"
+            name="message"
+            required
+            placeholder="Deja tu mensaje"
+          ></textarea>
+          <button
+            class="border border-sky-600 p-2 rounded-full text-sky-300 hover:bg-sky-600 hover:text-white"
+            id="submit"
+          >
+            Enviar mensaje
+          </button>
+        </form>
+      </article>
+    </main>
+    <footer
+      class="bg-black text-white h-32 flex justify-center items-center mt-12"
+    >
+      <p>
+        Pablo Kazalukian Desarrollador Web
+        <span id="yearFooter" class="text-sky-300"></span>
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
