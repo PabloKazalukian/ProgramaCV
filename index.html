@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Curriculum Vitae</title>
   </head>
@@ -23,7 +24,7 @@
     </header>
     <main class="grid grid-cols-8 gap-4 px-12">
       <aside
-        class="col-span-1 md:col-span-2 border border-sky-600 rounded-md p-2 mt-8 flex flex-col md:items-center items-start"
+        class="col-span-1 md:col-span-2 border border-sky-600 md:bg-sky-900 rounded-md p-2 mt-8 flex flex-col md:items-center items-start"
       >
         <div id="avatarID" class="mt-4">
           <img
@@ -126,15 +127,17 @@
       </section>
       <article
         id="contact"
-        class="col-span-8 flex flex-col items-center w-full text-white"
+        class="col-span-8 flex flex-col items-center w-full text-white mt-12"
       >
-        <h2 class="text-3xl">Contacto</h2>
+        <section></section>
+
+        <h2 class="text-3xl mb-12 mt-12">Contacto</h2>
         <form
           id="contactForm"
-          class="grid grid-cols-2 grid-row-1 gap-12 pt-6 text-black"
+          class="grid grid-cols-2 grid-row-1 gap-12 pt-6 text-black w-3/4 border border-sky-600 p-12 rounded-lg"
         >
           <input
-            class=""
+            class=" "
             type="text"
             id="inputName"
             name="name"
@@ -149,12 +152,13 @@
             placeholder="email@domain.com"
           />
           <textarea
-            class="col-span-2 row-span-1"
+            class="col-span-2 row-span-1 input"
             type="text"
             id="inputMessage"
             name="message"
             required
             placeholder="Deja tu mensaje"
+            rows="4"
           ></textarea>
           <button
             class="border border-sky-600 p-2 rounded-full text-sky-300 hover:bg-sky-600 hover:text-white"
